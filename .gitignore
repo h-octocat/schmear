@@ -1,2 +1,18 @@
 bin/*
 !bin/.gitkeep
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# Editor/swap files
+*~
+.*.swp
+.*.swo
+
+# Build directories
+build/
+obj/
