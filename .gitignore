@@ -16,3 +16,9 @@ bin/*
 # Build directories
 build/
 obj/
+
+# Formatting files
+.clang-format
+
+# Planning files
+Stretch Goals

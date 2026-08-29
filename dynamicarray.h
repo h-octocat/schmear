@@ -1,4 +1,5 @@
 #pragma once
+#include <stddef.h>
 
 // wrapper function for appendDA to simplify usage
 #define DA_APPEND(dn, value) \
@@ -8,9 +9,16 @@
   } while (0)
 
 struct DynamicArray {
+    // size of underlying buffer
     int capacity;
+
+    // size of array
     int size;
-    int sizeof_element;
+
+    // size of the element in bytes
+    size_t sizeof_element;
+
+    // pointer to the first address of raw buffer
     void *array;
 };
 
